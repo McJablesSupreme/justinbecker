@@ -40,16 +40,13 @@
         background-size: cover;
       }
 
-      /* Adjustments for mobile devices */
-      @media screen and (max-width: 768px) {
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3 {
-            width: 100%; /* Set width to 100% */
-            height: auto; /* Adjust height automatically to maintain aspect ratio */
-       }
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1600px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+          background-attachment: scroll;
+          min-height: 400px;
+        }
       }
-
 
       /* First image (Logo. Full height) */
       .bgimg-1 {
