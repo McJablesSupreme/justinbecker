@@ -40,25 +40,33 @@
         background-size: cover;
       }
 
+      /* Adjustments for mobile devices */
+      @media screen and (max-width: 768px) {
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            width: 100%; /* Set width to 100% */
+            height: auto; /* Adjust height automatically to maintain aspect ratio */
+       }
+      }
+
+
       /* First image (Logo. Full height) */
       .bgimg-1 {
         background-image: url("./images/relaxing.jpg");
         min-height: 100%;
-        width: 100%;
       }
 
       /* Second image (Resume) */
       .bgimg-2 {
         background-image: url("./images/greenScreen.png");
         min-height: 400px;
-        width: 100%;
       }
 
       /* Third image (Contact) */
       .bgimg-3 {
         background-image: url("./images/coding.jpg");
         min-height: 400px;
-        width: 100%;
       }
 
       .w3-wide {
